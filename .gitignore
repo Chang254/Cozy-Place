@@ -1,0 +1,18 @@
+# General
+.DS_Store
+
+# dependencies
+node_modules/
+.env
+
+# logs
+npm-debug.log*
+
+# output from webpack
+dist/
+
+# zip file for initial aws deployment
+*.zip
+
+# jest coverage
+coverage/
