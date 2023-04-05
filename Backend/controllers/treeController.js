@@ -6,7 +6,7 @@ const treeController = {};
 //Get tree
 treeController.getTree = async (req, res, next) => {
   //Userid sent from the frontend
-  const { userId } = req.params;
+  const userId = req.cookies.ssid;
 
   try{
     //Find tree data associated with the user and save it to res.locals for return to the user's garden page
@@ -28,7 +28,7 @@ treeController.getTree = async (req, res, next) => {
 //Add tree
 treeController.addTree = async (req, res, next) => {
   //UserId and study time to be added from the frontend
-  const { userId } = req.params;
+  const userId = req.cookies.ssid;
   const { studyTime } = req.body;
 
   try{

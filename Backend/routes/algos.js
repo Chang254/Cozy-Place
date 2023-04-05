@@ -5,7 +5,7 @@ const algoController = require('../controllers/algoController');
 
 
 //GET all algos
-router.get('/all/:userid',
+router.get('/all',
   algoController.getAlgos,
   (req, res) => res.status(200).json(res.locals.algos)
 );

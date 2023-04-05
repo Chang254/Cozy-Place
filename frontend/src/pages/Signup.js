@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
-import Cookies from 'js-cookie';
 import SignupForm from '../components/SignupForm';
 import catimg from '../images/catsignup.png';
 import AnimatedPage from '../components/AnimatedPage';
@@ -10,23 +9,15 @@ const Signup = () => {
   const [goToHome, setGoToHome] = useState(false);
 
   useEffect(() => {
-    //Check for login session
+    //Check for login
     const checkSession = async () => {
-      const cookieId = Cookies.get('ssid');
-      //If no cookie exists, then the user does not have a session yet, so allow them to access the page
-      if (!cookieId){
-        return;
-      }
-      //Format cookie value to send to backend
-      const cookieIdAdj = cookieId.slice(3,cookieId.length - 1);
       //Get the session associated with the cookie
-      const response = await fetch('/users/sessions/' + cookieIdAdj, {
+      const response = await fetch('/api/users/sessions/', {
         method: 'GET'
       });
       const data = await response.json();
-      console.log(data);
       //If the response is ok (there is a session) send the user to the home page (they already are logged in)
-      //They should not be on the signup page
+      //They should not be on the login page
       if (response.ok){
         return setGoToHome(true);
       }

@@ -15,10 +15,7 @@ const AlgoForm = () => {
   const handleSubmit = async (e) => {
     e.preventDefault();
     
-    //Get algo information from state set in the form and user id to tie algo to user
-    const cookieId = Cookies.get('ssid');
-    const user_id = cookieId.slice(3,cookieId.length - 1);
-    const algo = {title, description, user_id};
+    const algo = {title, description};
 
     //Make a post request to backend to make new algo
     const response = await fetch('/api/algos', {

@@ -60,13 +60,11 @@ const Timer = () => {
   //Adds studytime and trees to user's counts
   const addToTotal = async () => {
 
-    const cookieId = Cookies.get('ssid');
-    const userid = cookieId.slice(3,cookieId.length - 1);
 
     const newTree = { studyTime: addstudyTime };
 
     //Update tree data for the user (increment tree count by 1 and study time by the amount specified in body)
-    const response = await fetch('/trees/' + userid, {
+    const response = await fetch('/api/trees', {
       method: 'PATCH',
       body: JSON.stringify(newTree),
       headers: {

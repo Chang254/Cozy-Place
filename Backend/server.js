@@ -29,10 +29,10 @@ app.use(bodyParser.json());
 
 //Request Handler (Allows us to see which requests are being sent from the frontend, very useful for debugging and development)
 //May be useful to comment out in production (backend might get spammed with requests which will be hard to track)
-app.use((req, res, next) => {
-  console.log(req.path, req.method);
-  next();
-});
+// app.use((req, res, next) => {
+//   console.log(req.path, req.method);
+//   next();
+// });
 
 //Routes
 app.use('/api/algos', algoRoutes);

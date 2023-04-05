@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link, Navigate } from 'react-router-dom';
 import LoginForm from '../components/LoginForm';
 import catimg from '../images/cats.png';
-import Cookies from 'js-cookie';
 import AnimatedPage from '../components/AnimatedPage';
 
 const Login = () => {
@@ -12,15 +11,8 @@ const Login = () => {
   useEffect(() => {
     //Check for login
     const checkSession = async () => {
-      const cookieId = Cookies.get('ssid');
-      //If no cookie exists, then the user does not have a session yet, so allow them to access the page
-      if (!cookieId){
-        return;
-      }
-      //Format cookie value to send to backend
-      const cookieIdAdj = cookieId.slice(3,cookieId.length - 1);
       //Get the session associated with the cookie
-      const response = await fetch('/users/sessions/' + cookieIdAdj, {
+      const response = await fetch('/api/users/sessions', {
         method: 'GET'
       });
       const data = await response.json();

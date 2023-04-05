@@ -12,7 +12,7 @@ module.exports = {
     port: 3000,
     historyApiFallback: true,
     static: {
-      directory: path.join(__dirname, '/client/dist'),
+      directory: path.join(__dirname, '/frontend/src/images'),
       publicPath: '/'
     },
     proxy: {
@@ -25,7 +25,8 @@ module.exports = {
   },
   plugins: [
     new HTMLWebpackPlugin({
-      template: './frontend/src/index.html'
+      template: './frontend/src/index.html',
+      favicon: './frontend/src/images/CozyLogo.gif'
     })
   ],
 

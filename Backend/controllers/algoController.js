@@ -5,7 +5,7 @@ const algoController = {};
 //GET all algos
 algoController.getAlgos = async (req, res, next) => {
 
-  const { userid } = req.params;
+  const userid = req.cookies.ssid;
 
   try{
     //GET algos data by finding all algos and sorting with newest algo created at the top
@@ -112,7 +112,8 @@ algoController.updateAlgo = async (req, res, next) => {
 //Create a algo
 algoController.createAlgo = async (req, res, next) => {
 //Get the title, weight, and reps from the request body
-  const {title, description, user_id} = req.body;
+  const {title, description} = req.body;
+  const user_id = req.cookies.ssid;
   
   //emptyFields array for error handling (should return a list of empty fields to the user)
   const emptyFields = [];
