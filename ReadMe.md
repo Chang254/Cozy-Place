@@ -1,27 +1,20 @@
 # Cozy Place
 
+![React](https://img.shields.io/badge/react-%2320232a.svg?style=for-the-badge&logo=react&logoColor=%2361DAFB)&nbsp;&nbsp;![React Router](https://img.shields.io/badge/React_Router-CA4245?style=for-the-badge&logo=react-router&logoColor=white)&nbsp;&nbsp;![SASS](https://img.shields.io/badge/SASS-hotpink.svg?style=for-the-badge&logo=SASS&logoColor=white)<br/>![NodeJS](https://img.shields.io/badge/node.js-6DA55F?style=for-the-badge&logo=node.js&logoColor=white)&nbsp;&nbsp;![Express.js](https://img.shields.io/badge/express.js-%23404d59.svg?style=for-the-badge&logo=express&logoColor=%2361DAFB)&nbsp;&nbsp;![MongoDB](https://img.shields.io/badge/MongoDB-%234ea94b.svg?style=for-the-badge&logo=mongodb&logoColor=white)
+
 ## Summary
 
-Cozy Place is a fullstack application that provides a virtual desk space.  It is mainly targetted towards those studying computer science, but can be enjoyed by anyone looking for a cozy productivity app!
-Currently the page is best enjoyed on screen sizes of 1600 x 1100 px or larger, but work is being done to scale the application for all screen sizes!
+Cozy Place is a fullstack application that provides a virtual desk space.  It is mainly targetted towards those studying computer science, but can be enjoyed by anyone looking for a cozy productivity app!  The application is currently best enjoyed on large screen sizes, but work is being done to make it compatible across different screen sizes.
 
 **Current features include:**
 
-- Login/Create account form with authentication throughout the app using sessions and cookies
+- Login/Create account form with authentication throughout the app using sessions and HTTP only cookies
+    - All data is tied to users and stored in a non-relational MongoDB databae
 - Home page with access to weather by city
-- Algorithm to do list (to-do list)
+- Algorithm to do list
 - Basic Calculator and Text Area to work through problems
 - Garden app which tracks time studied and grows a tree if you study for a specified duration
 - Music page connected to spotify through Spotify Web API
-
-## Key Technologies Used
-- React 18
-- React Hooks
-- React router dom
-- Node 
-- Express
-- Mongoose (with No SQL DB)
-- Bcrypt (Encrypt user passwords)
 
 ## Demos
 Descriptions of approach and relevant technologies used for each section included.
