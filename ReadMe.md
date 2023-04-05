@@ -19,13 +19,13 @@ Cozy Place is a fullstack application that provides a virtual desk space.  It is
 ## Demos
 Descriptions of approach and relevant technologies used for each section included.
 
-### Login Page
+### Login Page & Sign Up Page
 
-
-### Sign Up Page
-
+https://user-images.githubusercontent.com/35904733/230003989-61bbb407-fa72-4696-9367-f3f22c07a585.mov
 
 ### Home Page
+
+https://user-images.githubusercontent.com/35904733/230005139-775a30b6-5284-4b67-8b63-212fd7cbae67.mov
 
 Tech used:
 
