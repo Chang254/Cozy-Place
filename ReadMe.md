@@ -48,7 +48,7 @@ When a user logs in with verified credentials, an HTTP Only cookie with the user
 https://user-images.githubusercontent.com/35904733/230293361-fe531a0d-971a-44ea-b998-25f6bca7808f.mov
 
 ***Technology Used:***
-&nbsp;
+&nbsp;The home page weather app uses the <a href = "https://openweathermap.org/api"> Open Weather API <a/> to fetch weather data for a specified city using Axios.  Axios is a nice Javascript library that is similar to the Fetch API.  I like to incorporate it into my projects because it is less verbose than Fetch API and has robust error handling.  OpenWeather has some great free options if you need a weather API for your personal project and is fairly easy to navigate.
 
 ***Features:***
 &nbsp;
@@ -87,10 +87,14 @@ https://user-images.githubusercontent.com/35904733/230296462-564e9ba2-f6e3-470a-
 
 https://user-images.githubusercontent.com/35904733/230296600-6e7852cd-0b07-419d-8fbf-2c11fae947e8.mov
 
+<br/>
+
 https://user-images.githubusercontent.com/35904733/230296686-0286388b-6106-4413-93ba-218bb4590612.mov
 
 ***Technology Used:***
 &nbsp;
+
+https://developer.spotify.com/documentation/web-api/tutorials/code-flow
 
 ***Features:***
 &nbsp;
