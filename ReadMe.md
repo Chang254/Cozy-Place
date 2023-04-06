@@ -8,8 +8,7 @@ Cozy Place is a fullstack application that provides a virtual desk space.  It is
 
 **Current features include:**
 
-- Login/Create account form with authentication throughout the app using sessions and HTTP only cookies
-    - All data is tied to users and stored in a non-relational MongoDB databae
+- Login/Create account form with authentication throughout the app
 - Home page with access to weather by city
 - Algorithm to do list
 - Basic Calculator and Text Area to work through problems
@@ -22,6 +21,14 @@ Cozy Place is a fullstack application that provides a virtual desk space.  It is
 
 This section includes all of the features of Cozy Place with demos and explanations of the technology used
 
+### Technology Overview
+
+Webpack was used to bundle frontend assets and proxy requests to the server. Webpack was chosen for it's large plugin ecosystem and highly tunable configuration.  The current configuration has hot module reloading enabled for enhanced developer experience. 
+
+***Frontend:*** &nbsp;The frontend was built using React, JavaScript, HTML, & SASS/CSS. React is my JavaScript framework of choice for most projects due to the large amount of community support, vast library ecosystem, and use of a virtual DOM to make fast and efficient updates to the DOM. One major library used in this project is react-router-dom, which is used to handle routes to different 'pages' on the website.  React-router-dom allows the SPA (single page application) to conditionally render components associated with different routes while minimizing network requests.
+
+***Backend:*** &nbsp;The backend server was built with Node.js/Express using the middleware pattern to enhance readability and debugging ability.  All data is stored in a non-relational MongoDB database for quick retrieval of user data and flexible data structuring.  Mongoose was used to model and interact with the data.
+ 
 ### Login Page & Sign Up Page
 
 https://user-images.githubusercontent.com/35904733/230003989-61bbb407-fa72-4696-9367-f3f22c07a585.mov
@@ -29,16 +36,54 @@ https://user-images.githubusercontent.com/35904733/230003989-61bbb407-fa72-4696-
 <br/>
 
 ***Technology Used:***
-Cozy Place's authentication was built using HTTP Only Cookies and Sessions.  Another common method to handle authentication is using JWTs (JSON Web Token), which are often more scalable due to their ability to minimize requests to the server (if stateless), however, Cozy Place was intentionally designed as a small scale project.  HTTP only cookies were chosen due to being lightweight, automatically sent with every request to the server (useful for the various requests we make to the server), and fairly secure.
+&nbsp;Cozy Place's authentication was built using HTTP Only Cookies and Sessions.  Another common method to handle authentication is using JWTs (JSON Web Token), which are often more scalable due to their ability to minimize requests to the server (if stateless), however, Cozy Place was intentionally designed as a small scale project.  HTTP only cookies were chosen due to being lightweight, automatically sent with every request to the server (useful for the various requests we make to the server), and fairly secure.
 
-***Features***
-Upon loading the application, users are navigated to the login page.  If the user does not yet have an account, they can create an account using the signup form.  The user's information is then sent to the server, where the password is encrypted using Bcrypt and their credentials are stored in the database.  Finally, the user is navigated back to the login page.
+***Features:***
+&nbsp;Upon loading the application, users are navigated to the login page.  If the user does not yet have an account, they can create an account using the signup form.  The user's information is then sent to the server, where the password is encrypted using Bcrypt and their credentials are stored in the database.  Finally, the user is navigated back to the login page.
 
 When a user logs in with verified credentials, an HTTP Only cookie with the user id is created and a session tied to the user that lasts 30 minutes is stored in the database.  Evertime a user accesses a page, a request is sent to the server and a query is made to the database looking for a session belonging to the user.  If the user no longer has a session, the user is alerted and navigated back to the login page.  Additionally, users cannot access the Login or Signup pages if they have an active session.  They must log out first, which clears their user id cookie and deletes the session from the database.
 
 ### Home Page
 
 https://user-images.githubusercontent.com/35904733/230005139-775a30b6-5284-4b67-8b63-212fd7cbae67.mov
+
+***Technology Used:***
+&nbsp;
+
+***Features:***
+&nbsp;
+
+### Algorithms Page
+
+***Technology Used:***
+&nbsp;
+
+***Features:***
+&nbsp;
+
+### Scratch Page
+
+***Technology Used:***
+&nbsp;
+
+***Features:***
+&nbsp;
+
+### Garden Page
+
+***Technology Used:***
+&nbsp;
+
+***Features:***
+&nbsp;
+
+### Music Page
+
+***Technology Used:***
+&nbsp;
+
+***Features:***
+&nbsp;
 
 Tech used:
 
