@@ -6,6 +6,8 @@
 
 Cozy Place is a fullstack application that provides a virtual desk space.  It is mainly targetted towards those studying computer science, but can be enjoyed by anyone looking for a cozy productivity app!  The application is currently best enjoyed on large screen sizes, but work is being done to make it compatible across different screen sizes.
 
+[Click Here to Learn How to Try Cozy Place](#usage)
+
 **Current features include:**
 
 - Login/Create account form with authentication throughout the app using sessions and HTTP only cookies
@@ -42,3 +44,19 @@ Spotify-web-api-node
 Spotify
 react-spotify-web-playback
 axios + fetch
+
+<a name = "usage" />
+
+## Using Cozy Place on Your Local Machine
+
+Cozy Place is not currently hosted, fork and clone this repository to your local machine to get started.  Once you have a copy of this repository on your local machine, follow these steps:
+
+1. Install dependencies in the root, Frontend, and Backend directories
+2. Create a new file named '.env' in the root directory.  Inside of this file, declare two variables:
+    1. PORT = 4000
+    2. MONGO_URI = [Your Mongo URI] 
+    3. **Note: You will need to have your own MongoDB database, get started here: https://www.mongodb.com/**
+3. Run the script 'npm run dev' in your terminal
+4. Have fun studying!
+
+
