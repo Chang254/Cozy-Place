@@ -45,7 +45,7 @@ When a user logs in with verified credentials, an HTTP Only cookie with the user
 
 ### Home Page
 
-https://user-images.githubusercontent.com/35904733/230005139-775a30b6-5284-4b67-8b63-212fd7cbae67.mov
+https://user-images.githubusercontent.com/35904733/230293361-fe531a0d-971a-44ea-b998-25f6bca7808f.mov
 
 ***Technology Used:***
 &nbsp;
@@ -55,6 +55,8 @@ https://user-images.githubusercontent.com/35904733/230005139-775a30b6-5284-4b67-
 
 ### Algorithms Page
 
+https://user-images.githubusercontent.com/35904733/230293398-b43142f5-7402-4f97-8a45-54fa9255fda7.mov
+
 ***Technology Used:***
 &nbsp;
 
@@ -62,6 +64,8 @@ https://user-images.githubusercontent.com/35904733/230005139-775a30b6-5284-4b67-
 &nbsp;
 
 ### Scratch Page
+
+https://user-images.githubusercontent.com/35904733/230296996-5da49a38-cbb3-415e-9c9d-14dcd3bcdb9e.mov
 
 ***Technology Used:***
 &nbsp;
@@ -71,6 +75,8 @@ https://user-images.githubusercontent.com/35904733/230005139-775a30b6-5284-4b67-
 
 ### Garden Page
 
+https://user-images.githubusercontent.com/35904733/230296462-564e9ba2-f6e3-470a-be4a-34d34f212d5a.mov
+
 ***Technology Used:***
 &nbsp;
 
@@ -78,6 +84,10 @@ https://user-images.githubusercontent.com/35904733/230005139-775a30b6-5284-4b67-
 &nbsp;
 
 ### Music Page
+
+https://user-images.githubusercontent.com/35904733/230296600-6e7852cd-0b07-419d-8fbf-2c11fae947e8.mov
+
+https://user-images.githubusercontent.com/35904733/230296686-0286388b-6106-4413-93ba-218bb4590612.mov
 
 ***Technology Used:***
 &nbsp;
