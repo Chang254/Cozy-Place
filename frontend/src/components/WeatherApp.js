@@ -38,6 +38,8 @@ const WeatherApp = () => {
             setBg(snowy);
           }
           
+        }).catch(error => {
+          console.log(error);
         });
     }
   };

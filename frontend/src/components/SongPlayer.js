@@ -11,6 +11,7 @@ const SongPlayer = ({accessToken, trackUri}) => {
 
   if (!accessToken) return null;
   return <SpotifyPlayer 
+    hideCoverArt = {true}
     token = {accessToken}
     showSaveIcon
     callback = {state => {
