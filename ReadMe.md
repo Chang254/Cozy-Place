@@ -57,7 +57,7 @@ https://user-images.githubusercontent.com/35904733/230293361-fe531a0d-971a-44ea-
 &nbsp;The home page weather app uses the <a href = "https://openweathermap.org/api"> Open Weather API <a/> to fetch weather data for a specified city using Axios.  Axios is a nice Javascript library that is similar to the Fetch API.  I like to incorporate it into my projects because it is less verbose than Fetch API and has robust error handling.  OpenWeather has some great free options if you need a weather API for your personal project and is fairly easy to navigate.
 
 ***Features:***
-&nbsp;
+&nbsp;Upon logging in the user is greeted with the home page and can enter their city to check the weather!  Once the user enters the city, some key weather information is shared with them and a fun image is rendered conditionally depending on the weather.
 
 ### Algorithms Page
 
@@ -104,22 +104,6 @@ https://developer.spotify.com/documentation/web-api/tutorials/code-flow
 
 ***Features:***
 &nbsp;
-
-Tech used:
-
-React Hooks, React-Router, Axios & Fetch
-SASS (CSS) HTML
-
-Express, MongoDB, Js-cookie, sessions
-
-Digital office desk/space 
-
-Framer Motion
-
-Spotify-web-api-node
-Spotify
-react-spotify-web-playback
-axios + fetch
 
 <a name = "usage" />
 
