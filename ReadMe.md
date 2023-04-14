@@ -53,6 +53,8 @@ When a user logs in with verified credentials, an HTTP Only cookie with the user
 
 https://user-images.githubusercontent.com/35904733/230293361-fe531a0d-971a-44ea-b998-25f6bca7808f.mov
 
+<br/>
+
 ***Technology Used:***
 &nbsp;The home page weather app uses the <a href = "https://openweathermap.org/api"> Open Weather API <a/> to fetch weather data for a specified city using Axios.  Axios is a nice Javascript library that is similar to the Fetch API.  I like to incorporate it into my projects because it is less verbose than Fetch API and has robust error handling.  OpenWeather has some great free options if you need a weather API for your personal project and is fairly easy to navigate.
 
@@ -62,22 +64,26 @@ https://user-images.githubusercontent.com/35904733/230293361-fe531a0d-971a-44ea-
 ### Algorithms Page
 
 https://user-images.githubusercontent.com/35904733/230293398-b43142f5-7402-4f97-8a45-54fa9255fda7.mov
+ 
+<br/>
 
 ***Technology Used:***
 &nbsp;
 
 ***Features:***
-&nbsp;
+&nbsp;The algorithms page provides a to-do list for algorithms.  Users can add an algorithm with a description to describe an optimal approach to the problem or why they want to revisit a specific problem.  If the user enters a valid Leetcode problem as the title, the user can click on the title to open the Leetcode problem page as a new tab.  Users can also update and delete their to-do list items.  All of the items are tied to the specific user and stored in the database so that data is persisted between sessions.
 
 ### Scratch Page
 
 https://user-images.githubusercontent.com/35904733/230296996-5da49a38-cbb3-415e-9c9d-14dcd3bcdb9e.mov
+ 
+<br/>
 
 ***Technology Used:***
 &nbsp;
 
 ***Features:***
-&nbsp;
+&nbsp;This page allows users to sketch out their ideas for coding problems like algorithms.  Users can pseudocode on the notepad and use the calculator on the right to do basic arithmetic while 
 
 ### Garden Page
 
@@ -87,7 +93,7 @@ https://user-images.githubusercontent.com/35904733/230296462-564e9ba2-f6e3-470a-
 &nbsp;
 
 ***Features:***
-&nbsp;
+&nbsp;The garden page is a focus app that tracks a user's total study time and trees planted.  Trees are planted when a user stays focussed for a specified amount of time (based on the user's input).
 
 ### Music Page
 
@@ -96,6 +102,8 @@ https://user-images.githubusercontent.com/35904733/230296600-6e7852cd-0b07-419d-
 <br/>
 
 https://user-images.githubusercontent.com/35904733/230296686-0286388b-6106-4413-93ba-218bb4590612.mov
+ 
+<br/>
 
 ***Technology Used:***
 &nbsp;
@@ -103,7 +111,7 @@ https://user-images.githubusercontent.com/35904733/230296686-0286388b-6106-4413-
 https://developer.spotify.com/documentation/web-api/tutorials/code-flow
 
 ***Features:***
-&nbsp;
+&nbsp;The music page provides a music player that is linked to Spotify. Users can search for songs and play them using the web player or choose to listen through another device. Users can also like songs and it will be added to their liked songs playlist on Spotify.
 
 <a name = "usage" />
 
