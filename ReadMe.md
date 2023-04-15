@@ -33,7 +33,7 @@ Webpack was used to bundle frontend assets and proxy requests to the server. Web
 
 ***Frontend:*** &nbsp;The frontend was built using React, JavaScript, HTML, & SASS/CSS. React is my JavaScript framework of choice for most projects due to the large amount of community support, vast library ecosystem, and use of a virtual DOM to make fast and efficient updates to the DOM. One major library used in this project is react-router-dom, which is used to handle routes to different 'pages' on the website.  React-router-dom allows the SPA (single page application) to conditionally render components associated with different routes while minimizing network requests.
 
-***Backend:*** &nbsp;The backend server was built with Node.js/Express using the middleware pattern to enhance readability and debugging ability.  All data is stored in a non-relational MongoDB database for quick retrieval of user data and flexible data structuring.  Mongoose was used to model and interact with the data.
+***Backend:*** &nbsp;The backend server was built with Node.js/Express using the middleware pattern to enhance readability and debugging ability.  All data is stored in a non-relational MongoDB database for quick retrieval of user data and flexible data structuring.  This flexibility was useful as the vision for the project changed quickly and data modeling had to be changed frequently.
  
 ### Login Page & Sign Up Page
 
@@ -68,7 +68,7 @@ https://user-images.githubusercontent.com/35904733/230293398-b43142f5-7402-4f97-
 <br/>
 
 ***Technology Used:***
-&nbsp;
+&nbsp;The algorithm page contains a to-do-list with data stored in the NoSQL database for each user.  The user interface is updated in sync with updates to the database using useContext and useReducer hooks to manage and update state.  Upon loading the page, a useEffect hook is used to fetch the data from the database once and the data is dispatched as a payload to the reducer with an action of 'SET_ALGOS', which sets the algorithms state.  This state (an array of algorithm objects) is then mapped onto to-do list items in the UI.  When a user creates an algo or updates/deletes an existing algo, the corresponding request is sent to the server to update the data in the database.  If this operation is executed successfully (response with status 200), the corresponding action is dispatched to the reducer to update state, which is then reflected in the UI.  In small applications useContext and useReducer hooks are great for managing state when the added complexity from a tool like Redux won't give you much benefit.  In larger applications, it may make more sense to use a state management tool like Redux to manage complex state interactions.
 
 ***Features:***
 &nbsp;The algorithms page provides a to-do list for algorithms.  Users can add an algorithm with a description to describe an optimal approach to the problem or why they want to revisit a specific problem.  If the user enters a valid Leetcode problem as the title, the user can click on the title to open the Leetcode problem page as a new tab.  Users can also update and delete their to-do list items.  All of the items are tied to the specific user and stored in the database so that data is persisted between sessions.
@@ -83,14 +83,14 @@ https://user-images.githubusercontent.com/35904733/230296996-5da49a38-cbb3-415e-
 &nbsp;The calculator on this page was built by appending to a string when a calculator button is pressed.  When the delete button is pressed, the last element is popped from the string and when the AC button is pressed, the string is reset to an empty string.  There are conditional statements to check for invalid inputs like back-to-back operators (e.g '++'), in which case nothing is added to the string.  The Eval method is used to evaluate the string.  Please note that using Eval can be dangerous as it can allow attackers to inject malicious code into your program, known as code injection or remote code execution.  It ca also make it difficult to optimize and debug your code since it creates new scope and variable bindings dynamically at runtime. This can lead to performance issues and hard-to-debug errors. Because the calculator is very simple and the user does not manually input something (the user is limited by the buttons on the calculator to build out the string), this is a lower risk use case for Eval.  If you want to implement Eval() in your code, just be sure to think about the potential security and performance implications it might have.
 
 ***Features:***
-&nbsp;This page allows users to sketch out their ideas for coding problems like algorithms.  Users can pseudocode on the notepad and use the calculator on the right to do basic arithmetic while 
+&nbsp;This page allows users to sketch out their ideas for coding problems like algorithms.  Users can pseudocode on the notepad and use the calculator on the right to help with basic arithmetic.
 
 ### Garden Page
 
 https://user-images.githubusercontent.com/35904733/230296462-564e9ba2-f6e3-470a-be4a-34d34f212d5a.mov
 
 ***Technology Used:***
-&nbsp;
+&nbsp;The garden page uses the same approach as the algorithm page for updating the page in sync with the database using react useContext and useReducer hooks.  Read above if you are interested in that aspect of this page! The timer was implemented with useState and useEffect hooks!  A count state was initialized with useState and a useEffect dependant on the count state.  Within the useEffect scope, an interval is set using setInterval, to decrement the counter by 1 every second.  We need the useEffect in order to 'clean up' the interval later, otherwise it would run indefinitely.  We have a clean up function inside of the useEffect to clear the interval once the component unmounts or when the count changes.
 
 ***Features:***
 &nbsp;The garden page is a focus app that tracks a user's total study time and trees planted.  Trees are planted when a user stays focussed for a specified amount of time (based on the user's input).
@@ -106,9 +106,7 @@ https://user-images.githubusercontent.com/35904733/230296686-0286388b-6106-4413-
 <br/>
 
 ***Technology Used:***
-&nbsp;
-
-https://developer.spotify.com/documentation/web-api/tutorials/code-flow
+&nbsp;The first component of this page is the login page.  Authorization was handled using the Authorization Code Flow, which is detailed extensively in Spotify's documentation of the API <a href = 'https://developer.spotify.com/documentation/web-api/tutorials/code-flow'> here </a>.  Two of my favorite libraries for working with the Spotify Web API are <a href = 'https://github.com/thelinmichael/spotify-web-api-node'> Spotify-Web-API-Node </a> and <a href = 'https://github.com/gilbarbara/react-spotify-web-playback'> React-Spotify-Web-Playback </a>.  I would definitely check both of those libraries out if you plan on working with the Spotify Web API!  
 
 ***Features:***
 &nbsp;The music page provides a music player that is linked to Spotify. Users can search for songs and play them using the web player or choose to listen through another device. Users can also like songs and it will be added to their liked songs playlist on Spotify.
