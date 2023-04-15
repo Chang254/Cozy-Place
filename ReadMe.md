@@ -80,7 +80,7 @@ https://user-images.githubusercontent.com/35904733/230296996-5da49a38-cbb3-415e-
 <br/>
 
 ***Technology Used:***
-&nbsp;
+&nbsp;The calculator on this page was built by appending to a string when a calculator button is pressed.  When the delete button is pressed, the last element is popped from the string and when the AC button is pressed, the string is reset to an empty string.  There are conditional statements to check for invalid inputs like back-to-back operators (e.g '++'), in which case nothing is added to the string.  The Eval method is used to evaluate the string.  Please note that using Eval can be dangerous as it can allow attackers to inject malicious code into your program, known as code injection or remote code execution.  It ca also make it difficult to optimize and debug your code since it creates new scope and variable bindings dynamically at runtime. This can lead to performance issues and hard-to-debug errors. Because the calculator is very simple and the user does not manually input something (the user is limited by the buttons on the calculator to build out the string), this is a lower risk use case for Eval.  If you want to implement Eval() in your code, just be sure to think about the potential security and performance implications it might have.
 
 ***Features:***
 &nbsp;This page allows users to sketch out their ideas for coding problems like algorithms.  Users can pseudocode on the notepad and use the calculator on the right to do basic arithmetic while 
