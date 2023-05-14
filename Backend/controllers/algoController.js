@@ -49,7 +49,7 @@ algoController.getAlgo = async (req, res, next) => {
   }
 };
 
-//Delete a algo
+//Delete an algo
 algoController.deleteAlgo = async (req, res, next) => {
   //Get the algo ID requested
   const { id } = req.params;
@@ -79,7 +79,7 @@ algoController.deleteAlgo = async (req, res, next) => {
 
 };
 
-//Update a algo
+//Update an algo
 algoController.updateAlgo = async (req, res, next) => {
   //Get the algo ID requested
   const { id } = req.params;
@@ -109,7 +109,7 @@ algoController.updateAlgo = async (req, res, next) => {
 };
 
 
-//Create a algo
+//Create an algo
 algoController.createAlgo = async (req, res, next) => {
 //Get the title, weight, and reps from the request body
   const {title, description} = req.body;
